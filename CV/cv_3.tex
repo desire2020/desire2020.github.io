@@ -1,0 +1,321 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:.
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge Sidi Lu}\\\medskip % Your name
+	{\color{headings} Undergraduate Student from}\\
+	{\color{headings} the ACM Honored Class}\\
+	{\color{headings} Shanghai Jiao Tong University}
+}
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\raisebox{-1pt}{\faPhone} & +86 186 818 71745 \\ % Phone number
+			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:desire2020@126.com}{desire2020@126.com} \\ % Email address
+			\raisebox{-1pt}{\small\faGithub} & \href{https://github.com/desire2020}{https://github.com/desire2020} \\ % Website
+			%\raisebox{-1pt}{\faGithub} & \href{https://github.com/username}{https://github.com/username} \\ % GitHub profile
+			%\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/username}{https://www.linkedin.com/in/username} \\ % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+%----------------------------------------------------------------------------------------
+%	MAJOR RESEARCH PROJECT
+%----------------------------------------------------------------------------------------
+
+\section{Undergraduate Research}
+
+{\raggedright\textbf{``Unsupervised Learning for Generative Data Modeling with Modern Machine Learning Techniques"}\\\medskip}
+
+My research mainly focuses on theoretically and empirically addressing the problem of building effective generative models, including tractable density models (language models, PixelRNN-like models, Flow-based models), implicit density models (GAN/WGANs), explicit variational models (VAEs) and Bayesian Graphical Models.
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Internship Experience}
+
+% Blank \workposition command to add another job:
+
+%\workposition{} % Duration
+%{} % FT/PT (full time or part time)
+%{} % Employer
+%{} % Job title
+%{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\workposition{Current, from Jul 2018} % Duration
+{FT} % FT/PT (full time or part time)
+{BCS Dept, Massachusetts Institute of Technology} % Employer
+{Visiting Student/Research Intern} % Job title
+{I am invited by Prof. Joshua B. Tenenbaum for a 7-month visiting at MIT. My main focus is on generative modeling using Bayesian Graphical Model and guided meta-learning of such models.} % Description
+
+%------------------------------------------------
+
+\workposition{Current, from Jul 2017} % Duration
+{PT} % FT/PT (full time or part time)
+{APEX Lab, Shanghai Jiao Tong University} % Employer
+{Research Intern} % Job title
+{I am an undergraduate member of the Natural Language Generation and Unsupervised Learning group of APEX Lab, Shanghai Jiao Tong University. My main focus is on generative modeling of sequential discrete data using various approaches like GAN, Inverse Reinforcement Learning and Cooperative Training which is recently proposed by myself.}  % Description
+
+%------------------------------------------------
+
+
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+ % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+% Blank \educationentry{} command to add another degree:
+
+%\educationentry{} % Duration
+%{} % Degree
+%{} % Honours, achievements or distinctions (e.g. first class honours)
+%{} % Department
+%{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+	%------------------------------------------------
+	
+	\educationentry{2015 -- 2019} % Duration
+	{Bachelor of Computer Science } % Degree
+	{ACM Honered Class (Top Class in SJTU)} % Honours, achievements or distinctions (e.g. first class honours)
+	{Zhiyuan College} % Department
+	{Shanghai Jiao Tong University} % Institution
+	
+
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+\section{Awards}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{2015 -- 2019}{\textbf{Zhiyuan Annual Scholarship}}{}
+	\tableentry{}{\textit{Shanghai Jiao Tong University}}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\switchcolumn
+\section{Computer Skills} 
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	%------------------------------------------------
+	
+	\tableentry{Intermediate}{\LaTeX, MATLAB, Java, Scheme}{}
+	\tableentry{}{Linux, Microsoft Windows}{}
+	
+	%------------------------------------------------
+	
+	\tableentry{Expert}{C/C++, Python2/3, TensorFlow}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Language Skills}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{TOEFL}{Total: 104 (L28, S23, R28, W25)}{}
+	
+	%------------------------------------------------
+	
+	\tableentry{GRE}{Total: 320 (V150, Q170, W 4.0)}{}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS DESCRIPTION
+%----------------------------------------------------------------------------------------
+\section{Publications \& Submissions}
+
+% Example \longformdescription{} command to add another publication:
+
+%\longformpublication{Reference (format this manually as desired)}
+
+%------------------------------------------------
+
+Jiaxian Guo, \longformpublication{\textbf{Sidi Lu}, Han Cai, Weinan Zhang, Yong Yu, Jun Wang (2017). \\
+Long Text Generation via Adversarial Training with Leaked Information \\
+\textbf{AAAI-2018}\\
+\textbf{Accepted as a Conference Poster Paper}}
+
+Yaoming Zhu, \longformpublication{\textbf{Sidi Lu}, Lei Zheng, Jiaxian Guo, Weinan Zhang, Jun Wang, Yong Yu (2018). \\
+Texygen: A Benchmarking Platform for Text Generation Models \\
+\textbf{SIGIR-2018}\\
+\textbf{Accepted as a Conference Short Paper}}
+
+
+\longformpublication{\textbf{Sidi Lu}, Lantao Yu, Weinan Zhang, Yong Yu (2018). \\
+CoT: Cooperative Training for Generative Modeling of Discrete Data \\
+\textbf{NIPS 2018}\\
+\textbf{Under Review (Scored 8/7/5)}}
+
+\longformpublication{\textbf{Sidi Lu}, Yaoming Zhu, Weinan Zhang, Jun Wang, Yong Yu (2018). \\
+Neural Text Generation: Past, Present and Beyond\\
+\textbf{IJCAI 2018 Survey Track}\\
+Submitted}
+
+\longformpublication{\textbf{Sidi Lu}, Jiajun Wu, Sihao Ying, Jiayuan Mao, Joshua B. Tenenbaum (2018). \\
+Meta Adversarial Learning for Bayesian Generative Modeling\\
+To Be Completed}
+
+\section{Skills}
+
+% Example \longformdescription{} command to add another section:
+
+%\longformdescription{Heading}{Description}
+
+%------------------------------------------------
+
+\longformdescription{Self-motivated}{I do not require detailed instructions on how should I finish the project. I have lots of interesting ideas and would always be willing to implement and verify them on my own.}
+
+\longformdescription{Insightful}{For tasks that interest me, I am very agile in getting the intrinsic point of the problem and previous state-of-the-art approaches, as well as using them as motivation for exploring new possibilities.}
+
+\longformdescription{Passionate}{My dream has been developing a generative model that is good enough to fully understand humans' minds since I was 14 years old. I've dedicated years of hard working to make this dream come true. The dream gradually evolves into some kind of a passion, which keeps me working even if I face challenges and extremely hard problems.}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+
+%------------------------------------------------
+
+% As an alternative to a long-form publication list, you can create a shorter summary using only DOI values and years.
+
+% Example \doipublication{} command to add another publication:
+
+%\doipublication{Year}{DOI}{firstauthor}{spaceafter}
+
+% All four parameters are required (can be empty though)
+% A value of "firstauthor" in the third parameter will print the DOI in bold
+% A "spaceafter" value in the fourth parameter will add some vertical space -- this is to be used between years
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\end{paracol}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
