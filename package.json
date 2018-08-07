@@ -1,10 +1,10 @@
 {
-  "name": "ACM_Website_2014",
-  "author": "ACM PPCA 2014",
-  "homepage": "https://github.com/fei960922/ACM_Website_2014",
+  "name": "Sidi Lu's HomePage",
+  "author": "Sidi Lu",
+  "homepage": "https://desire2020.github.io",
   "repository": {
     "type": "git",
-    "url": "git@github.com:fei960922/ACM_Website_2014.git"
+    "url": "git@github.com:desire2020/desire2020.github.io"
   },
   "bugs": {
     "url": ""
