@@ -72,7 +72,7 @@ a:hover {text-decoration: none;}
 @media (max-width: 960px) {.inners	{width:100%;}}
 
 #headingDefault{
-	background: #de8639;
+	background: #e9a56a;
 	position  :	fixed;
 	z-index   :	1000;
 	top       : 0px;
@@ -104,7 +104,7 @@ a:hover {text-decoration: none;}
 
 #headingForIndex.affix {
 	position          : fixed;
-	background: #de8639;
+	background: #e9a56a;
 	top               : 0;
 	bottom            :auto;
 	width             :100%;
@@ -129,7 +129,7 @@ a:hover {text-decoration: none;}
 }
 
 #headingForPost.affix {
-   background: #de8639;
+   background: #e9a56a;
 	position  :	fixed;
 	z-index   :	1000;
 	top       : 0;
@@ -536,12 +536,12 @@ padding: 0;
 .academic_bottom>div {padding:0;}
 .academic_now,
 .academic_lt>div:hover{
-	color:#de8639;
+	color:#e9a56a;
 	border-left:0;
 	background-color: #CCCCCC;
 
-	border-left:3px solid #de8639;
-	border-right:3px solid #de8639;
+	border-left:3px solid #e9a56a;
+	border-right:3px solid #e9a56a;
 }
 .academic_bottom .nav>.active>a,
 .academic_bottom .nav>.active:hover>a,
@@ -549,10 +549,10 @@ padding: 0;
 .academic_bottom .nav>li>a:hover,
 .academic_bottom .nav>li>a:focus{
 	width:100%;
-	color:#de8639;
+	color:#e9a56a;
 	border-left:0;
 	background-color: #CCCCCC;
-	border-right:3px solid #de8639;
+	border-right:3px solid #e9a56a;
 }
 @media (max-height:600px){.academic_bottom {display:none;}}
 @media (max-height:800px){
