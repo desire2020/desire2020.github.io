@@ -1,0 +1,47 @@
+---
+layout:	default
+title: Academic
+---
+
+<div class = "container_big bs-docs-container">
+  <div class = "academic_left">
+        <div class = "academic_lt">
+      <div class = "academic_now">
+	<a href="./academic_1.html">
+	  <h2>科研成果</h2></a>
+      </div>
+      <div>
+	<a href="./academic_4.html">
+	  <h2>学术节</h2></a>
+      </div>
+      <div>
+	<a href="./academic_5.html">
+	  <h2>学长感悟</h2></a>
+      </div>
+    </div>
+    <div class = "academic_bottom">
+      <div class="bs-docs-sidebar hidden-print hidden-xs" role="complementary">
+         <ul class="nav bs-docs-sidenav">
+	   {% for post in site.categories.research_achievements%}
+           <li>
+             <a href="#{{post.year}}">
+               <span class="toctext">{{post.year}}</span>
+             </a>
+           </li>
+	   {% endfor %}
+         </ul>
+       </div>
+    </div>
+  </div>
+  
+  <div class = "acm_article academic_main" role = "main">
+    <h1>科研成果</h1>
+    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+      {% for post in site.categories.research_achievements %}
+      <div id = "{{post.year}}"></div><br/>
+      <h2> <span class="mw-headline"> {{post.year}} </span></h2>
+      {{post.content}}
+      {% endfor %}
+    </div>
+  </div>
+</div>
