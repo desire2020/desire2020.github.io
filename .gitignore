@@ -2,3 +2,4 @@ CV/*.out
 CV/*.aux
 CV/*.syn*
 CV/*.log
+_site
