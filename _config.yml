@@ -1,7 +1,7 @@
 encoding:       'utf-8'
 markdown:       kramdown
 highlighter:    pygments
-title:          ACM HONORED CLASS
+title:          Sidi Lu
 baseurl:        ""
 url:            ""
 permalink:      /:categories/:title.html
@@ -10,8 +10,8 @@ gems: [jekyll-paginate]
 footer:
       
 copyright:
-    - Design by ACM HONORED CLASS
-    - "&copy; Copyright 2016, ACM HONORED CLASS. All Rights Reserved."
+    - Redesign by Sidi Lu
+    - "&copy; Copyright 2018, ACM HONORED CLASS. All Rights Reserved."
       
 css:
     - /lib/style.css
