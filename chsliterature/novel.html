@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<div class="container_big">
+    <ul class="timeline">
+    {% for post in site.categories.novel %}
+	    {% include post.html %}
+	{% endfor %}  
+	</ul>
+</div>	
