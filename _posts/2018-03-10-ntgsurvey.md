@@ -9,7 +9,7 @@ We introduce Texygen, a benchmarking platform to support research on open-domain
 
 # Arxiv Link
 
-https://arxiv.org/abs/1803.07133
+[https://arxiv.org/abs/1803.07133](https://arxiv.org/abs/1803.07133)
 
 # Status
 
