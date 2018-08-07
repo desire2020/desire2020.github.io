@@ -191,7 +191,7 @@ a:hover {text-decoration: none;}
 }
 .index_2{
 	text-align      :center;
-	width: 75%;
+	max-width: 75%;
 	background-color: #DDDDDD;
 }
 .index_2 h1{
