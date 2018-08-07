@@ -17,6 +17,13 @@ Read usage license on for this template on http://www.bootstraptor.com
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}" type="text/css" />
 		<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" type="text/css" />
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				tex2jax: {inlineMath: [['$', '$']]},
+				messageStyle: "none"
+			});
+		</script>
 <style type="text/css">
       body {
         padding-top: 50px;

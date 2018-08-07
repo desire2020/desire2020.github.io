@@ -1,6 +1,6 @@
 ---
 layout:   research
-title:    IJCAI-2018 Neural Text Generation: Past, Present and Beyond
+title:    IJCAI-2018&#58; Neural Text Generation&#58; Past, Present and Beyond
 category: publications
 ---
 
