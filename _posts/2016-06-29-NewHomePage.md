@@ -1,5 +1,5 @@
 ---
-layout:   trend
+layout:   news
 title:    新主页上线！
 category: trend
 ---
