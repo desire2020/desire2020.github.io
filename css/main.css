@@ -151,7 +151,10 @@ a:hover {text-decoration: none;}
 	text-shadow    :0 0 30px #000000;
  }
 
-.navbar{margin:0;color:#FFFFFF;}
+.navbar{margin:0;
+	color:#FFFFFF;
+	background: #de8639;
+}
 .navbar-toggle{margin-bottom:0;}
 .nav>li>a{color:#FFFFFF;padding:15px 14px;}
 .dropdown>a:hover,.nav>li>a:hover,.nav .open>a{
