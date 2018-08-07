@@ -191,7 +191,6 @@ a:hover {text-decoration: none;}
 }
 .index_2{
 	text-align      :center;
-	max-width: 75%;
 	background-color: #DDDDDD;
 }
 .index_2 h1{
@@ -227,7 +226,7 @@ a:hover {text-decoration: none;}
 	margin : 10px 30px;
 }
 .index_4{
-	background           : url(../images/index_2.jpg) 50% 0 no-repeat;
+	background           : url(../images/scared_rabbit.jpg) 50% 0 no-repeat;
 	background-size      : cover;
 	background-attachment: fixed;
 	box-shadow           : 0 0 20px #000000 inset; 	

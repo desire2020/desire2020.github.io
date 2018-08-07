@@ -24,7 +24,7 @@ title:	Index
     <div class="container_big">
     <div class="index_5 row">
       <div class="col-md-6">
-          {% for post in site.categories.news%}
+          {% for post in site.categories.trend%}
             {% if post.feature != null%}
                 <img src = "/images/{{post.feature}}" />
                 {% break %}
@@ -32,11 +32,21 @@ title:	Index
           {% endfor %}
       </div>
       <div class="col-md-6">
-        <h1>Recent Activities</h1>
+        <h1>Current Trend</h1>
             {% for post in site.categories.trend limit:10 %}
 	        	{% include brief_post.html %}
 	        {% endfor %}  
         <button type="button" class="btn btn_new" onclick="window.open('./trend/index.html')">More</button>
+      </div>
+      <div class="col-md-6">
+        <h1>Recent Publications and Submissions</h1>
+            {% for post in site.categories.publication limit:3 %}
+	        	{% include brief_post.html %}
+            {% endfor %}
+            {% for post in site.categories.submission limit:3 %}
+	        	{% include brief_post.html %}
+	          {% endfor %}  
+        <button type="button" class="btn btn_new" onclick="window.open('./research/index.html')">More</button>
       </div>
     </div>
   </div>
