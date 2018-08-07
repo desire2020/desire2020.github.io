@@ -1,7 +1,7 @@
 ---
 layout:   research
 title:    IJCAI-2018 Neural Text Generation: Past, Present and Beyond
-category: submissions
+category: publications
 ---
 
 # Abstract
