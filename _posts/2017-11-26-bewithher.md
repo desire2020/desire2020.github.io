@@ -1,7 +1,7 @@
 ---
 layout:   news
 title:    记一个神奇的日子
-category: trend
+category: trend_invisible
 ---
 
 今天真是个好日子。假如我可以假想我就在这一天死了，那也是非常幸福的；或者不，不知道她会不会伤心。
