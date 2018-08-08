@@ -1,7 +1,7 @@
 ---
 layout:   news
 title:    再见
-category: trend
+category: trend_invisible
 ---
 
 佩，如果我还可以说一句话，如果你还愿意听一句话。
