@@ -1,6 +1,6 @@
 ---
 layout:   news
-title:    MIT（伪）十日记
+title:    MIT科研实习 Research Intern at MIT
 category: trend
 ---
 
