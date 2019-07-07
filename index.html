@@ -21,7 +21,9 @@ title:	Index
         <h2> Email: sidilu@usc.edu </h2>
         <h1> Researcher and poet</h1>
         <p>
-            As a researcher, my research mainly focuses on general aspects of text generation, including practice and theories of auto-regressive fashioned models and non-auto-regressive Markov Random Field models (e.g. BERT).
+            As a researcher, my research mainly focuses on general aspects of text generation, especially the practice and theory of text generative models i.e. the data-driven fashioned text generation.
+            
+            My recent focus is on optimal transport for text generation and creative text generation.
         </p>
         <p>
             As a poet, my work are mainly identified as misty poetry.
@@ -49,18 +51,18 @@ title:	Index
             {% endfor %}  
         <button type="button" class="btn btn_new" onclick="window.open('./research/index.html')">More</button>
       </div>
-      <div class="col-md-5">
-        <h1>Recent Translations</h1>
-            {% for post in site.categories.translation limit:5 %}
-            {% include brief_post.html %}
-            {% endfor %}  
-        <button type="button" class="btn btn_new" onclick="window.open('./research/index.html')">More</button>
-      </div>
     </div>
     <div class="index_5 row">
       <div class="col-md-6">
         <h1>Recent Research Focus</h1>
             {% for post in site.categories.publications limit:5 %}
+            {% include brief_post.html %}
+            {% endfor %}  
+        <button type="button" class="btn btn_new" onclick="window.open('./research/index.html')">More</button>
+      </div>
+      <div class="col-md-5">
+        <h1>Recent Translations</h1>
+            {% for post in site.categories.translation limit:5 %}
             {% include brief_post.html %}
             {% endfor %}  
         <button type="button" class="btn btn_new" onclick="window.open('./research/index.html')">More</button>
