@@ -7,7 +7,11 @@ Read usage license on for this template on http://www.bootstraptor.com
 ##########################################################################
 -->
 <html>
-	<head>
+		<head>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	  </script>
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="generator" content="Jekyll" />
@@ -115,7 +119,7 @@ Read usage license on for this template on http://www.bootstraptor.com
 	</div>
 	</div> -->
 <!-- CONTENT SIDE-->
-<div class="col-sm-8 col-lg-8 signForNews">
+<div class="col-sm-12 col-lg-12">
 	{{ content }}
 </div>
 </div>
