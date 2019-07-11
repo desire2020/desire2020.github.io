@@ -24,10 +24,30 @@ category: translation
 
 全书中非紧情形被相当规矩地处理了：要么得益于引入极限过程，要么得益于引入限制条件（最优传输的限制条件亦是最优的——这是一个简单但是强大的原理）。Luigi Ambrosio引入此领域的近似可微的概念看起来在研究非紧黎曼空间中的最优传输问题时特别好使！
 
-最优传输理论中有几块我最终决定不去用很多篇幅展开讨论。其中一个是最优传输的正则性：一方面这个东西的容量过大，离有所定论还差得远；另一方面对我们这些讲义来说也没什么必要。最近颇有一些讨论流形上最优传输问题的正则性的工作（主要来自Neil Trudinger，王旭佳（音），Gr´egoire Loeper及其他一些同仁），显然关于正则性的工作，一个一致、紧凑的体系之形成正方兴未艾。
+最优传输理论中有几块我最终决定不去用很多篇幅展开讨论。其中一个是最优传输的正则性：一方面这个东西的容量过大，离有所定论还差得远；另一方面对我们这些讲义来说也没什么必要。最近颇有一些讨论流形上最优传输问题的正则性的工作（主要来自Neil Trudinger，王旭佳（音），Gr´egoire Loeper及其他一些同仁）——显然关于正则性的工作，一个一致、紧凑的体系之形成正方兴未艾。
 
 另一个没有被着墨的问题是对最优传输的数值模拟。除了经典的诸如单纯形算法的方法，有一些更加新鲜的类似Dimitri Bertsekas提出的拍卖算法，以及更新的一些基于Monge-Ampere方程的数值方法。我觉得非常需要一个看得过去的对此一类算法的百科全书式参考目录。
 
 还有另一个没怎么展开讨论的是渐渐在动态系统的研究里浮入视野的Monge-Mather-Mane问题，尤其是一个特例：一类最优传输问题里面基代价函数本身是一个距离。这个问题在几本关于理论Lagrangian mechanics的书里面得到了一些解决，比如Albert Fathi即将出版的专著Weak KAM theorem in Lagrangian dynamics。不过个人认为更理想的是把所有东西用一个能包含最优传输问题于其下的框架重新整理一遍。Patrick Bernard和Boris Buffoni就跨出了这其中重要的一步。这本讲义中倒是会有一点对Mather's approach的初步介绍，但是其实可讨论的还很多。
 
-对于第22章（测度的收缩）的处理深受Michel Ledoux的书《The Concentration of Meature Phenomenon》的影响。第23章至25章的结果
+我对第22章（测度的收缩）的处理深受Michel Ledoux的书《The Concentration of Meature Phenomenon》的影响。第23章至25章的结果则颇得益于Luigi Ambrosio、Nicola Gigli和Giuseppe Savare的专著《Gradient Flows in Metric Spaces and in the Space of Probability Measures》。我极力推荐将这两份参考文献作为附加的阅读材料。
+
+最优传输在概率论里还有一些其他的经典应用，本书中不再一一细数，有兴趣的读者可以在Svetlozar Rachev和Ludger Ruschendorf的一篇两卷长的论文Mass Transportation Problems里面获得一些补充。
+
+在本文的撰写准备中，我得到了一些朋友和同事们的帮助。其中，Luigi Ambrosio和John Lott是我认为做出了最多贡献的；这些文稿颇得益于他们详尽的评价和建议。第三部分的很大一块，及第一第二部分的重头，都可以追溯到我和John开始于2004年的合作——至今我仍感恩彼时伯克利的Miller学院对鄙人之看顾。同Patrick Bernard和Albert Fathi的促膝长谈使我理解了最优传输的现代理论与Mather理论之间的深刻联系，这种理解也成为第一部分的理论铺陈的基石。除了这些朋友之外，我还要感谢以下这些朋友的鼎力支持，他们是： Fran¸cois Bolley, Yann Brenier, Xavier Cabr´ e, Dario CorderoErausquin, Denis Feyel, Alessio Figalli, Sylvain Gallot, Wilfrid Gangbo, Diogo Gomes, Natha¨ el Gozlan, Arnaud Guilin, Michel Ledoux, Gr´egoire Loeper, Robert McCann, Shinichi Ohta, Felix Otto, Ludger R¨uschendorf, Giuseppe Savar´e, Karl-Theodor Sturm, Anthon Thalmaier, Hermann Thorisson, S¨uleyman ¨Ust¨unel, Anatoly Vershik, 王旭佳（音）及其他一些此处未特别提及的朋友。
+
+这门课程的精简版得到了一些试讲的机会。几次是面向Bonn大学、Dortmund大学、Grenoble大学和Orleans大学背景多样的听众，有一次是在Leysin的Borel研讨会上，还有一次是在Bures-sur-Yvette的IHES活动上。文稿中不可或缺的一部分是在Oberwolfach让人流连的MFO研究所和Luminy的CIRM研究所完成的。所有这些研究机构，本人在此致以诚挚的谢意。
+
+能够在此向Jean Pieard表达本人的谢意是我的荣幸。感谢他组织了2005年度圣弗卢尔暑期学校。另一些致谢献给那些参与了提问、评论和纠错的工作的好朋友们，尤其是Sylvain Arlot（特别感谢他的斧正！），Fabrice Baudoin, Jerome Demange, Steve Evans（同样感谢他带来的精彩课程），Christophe Leuridan, Jan Obloj, Erwann Saint-Loubert Bie和其他一些朋友们。我也在此对一群有爱的博士小朋友们表示我的谢意，感谢他们作为东道主让我在圣弗卢尔享受到了可口的食物、安逸的居所及这整段舒适的旅程中不可胜数的其他有趣的日程。（也特别感谢我的私人司机，Stephane Loisel和我的乒乓球球伴Francois Simenhaus）
+
+这些讲义的输入大都是在Miller学院赠送给我的这台值得信赖的笔记本上完成的。我永远感谢那些让数学家们能够用上便利的输入系统的先驱者们，特别是发明了TeX的Donald Knuth，以及开发了LaTeX，BibTeX和XFig的设计者们。
+
+一如既往，我欢迎读者朋友们告诉我书中误写误印的地方。此书发表后，我会在我的主页上长期维护一个勘误表，以供大家参考。
+
+Cedric Villani
+2006年12月于Lyon
+
+# 重要的理论前提
+
+## 公理系统
+
