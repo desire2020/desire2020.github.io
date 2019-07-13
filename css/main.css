@@ -103,7 +103,7 @@ a:hover {text-decoration: none;}
 }
 
 #headingForIndex.affix {
-	position          : fixed;
+	position          : fixed; 
 	background: #e9a56a;
 	top               : 0;
 	bottom            :auto;
