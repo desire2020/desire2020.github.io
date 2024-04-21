@@ -18,15 +18,21 @@ title:	Index
     <div class="index_3 container_big">
         <img src = "./images/me.jpg" />
       <div>
-        <h2> Email: sidilu@usc.edu </h2>
-        <h1> Researcher and poet</h1>
+        <h2> Email: sidilu@cs.ucla.edu </h2>
+        <h2> Husband, researcher, poet and singer.</h2>
+        <h3> Or <u><i>just a dumb bunny</i></u>.</h3>
+        <h4> PhD Candidate @ <a href="https://vnpeng.net/group/">UCLA Pluslab</a> under supervision of <a href="https://vnpeng.net/">Prof. Nanyun (Violet) Peng</a> </h4>
         <p>
-            As a researcher, my research mainly focuses on general aspects of text generation, especially the practice and theory of text generative models i.e. the data-driven fashioned text generation.
-            
-            My recent focus is on optimal transport for text generation and creative text generation.
+            As a researcher, my research mainly focuses on <b>controllable generation</b>, including both <b>evolutionary</b> approaches for better control over causal, autoregressive language models and <b>revolutionary</b> approaches to build <b>Non-autoregressive</b> language models.
         </p>
         <p>
-            As a poet, my work are mainly identified as misty poetry.
+            As a poet, my work are mainly identified as modern misty poetry that mainly question <i> the very essence of life and death </i>.
+        </p>
+        <p>
+            As an (amateur) singer, I'm generally interested in R&B, thrash metal and pop rock, especially those from 1990s. </i>.
+        </p>
+        <p>
+            I generally identify myself as an <b>agnostic antheist</b> but I have a strong interest in studying the history of religions and cultures, especially those related to Christianity.
         </p>
     </div> 
   </div>
@@ -38,36 +44,37 @@ title:	Index
     <div class="index_5 row">
       
       <div class="col-md-6">
-        <h1>Current Trend</h1>
+        <h2>Current Trend</h2>
             {% for post in site.categories.trend limit:5 %}
 	        	{% include brief_post.html %}
 	        {% endfor %}  
         <button type="button" class="btn btn_new" onclick="window.open('./trend/index.html')">More</button>
       </div>
-      <div class="col-md-5">
+      <!-- <div class="col-md-5">
         <h1>Recent Chinese Poems</h1>
             {% for post in site.categories.poem limit:5 %}
             {% include brief_post.html %}
             {% endfor %}  
         <button type="button" class="btn btn_new" onclick="window.open('./research/index.html')">More</button>
-      </div>
-    </div>
-    <div class="index_5 row">
+      </div> -->
       <div class="col-md-6">
-        <h1>Recent Research Focus</h1>
+        <h2>Recent Research Focus</h2>
             {% for post in site.categories.publications limit:5 %}
             {% include brief_post.html %}
             {% endfor %}  
         <button type="button" class="btn btn_new" onclick="window.open('./research/index.html')">More</button>
       </div>
-      <div class="col-md-5">
+    </div>
+    <!-- <div class="index_5 row">
+      
+       <div class="col-md-5">
         <h1>Recent Translations</h1>
             {% for post in site.categories.translation limit:5 %}
             {% include brief_post.html %}
             {% endfor %}  
         <button type="button" class="btn btn_new" onclick="window.open('./research/index.html')">More</button>
       </div>
-    </div>
+    </div> -->
     
   </div>
 {% include footer.html %}

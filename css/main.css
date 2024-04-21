@@ -184,7 +184,7 @@ a:hover {text-decoration: none;}
 	------------------------------------------  */
 
 .index_1{
-	background     : url(../images/scared_rabbit.jpg) 50% 0 no-repeat;
+	background     : url(../images/background.jpg) 50% 0 no-repeat;
 	background-size: cover;
 }
 .index_1 img {
@@ -228,7 +228,7 @@ a:hover {text-decoration: none;}
 	margin : 10px 30px;
 }
 .index_4{
-	background           : url(../images/scared_rabbit.jpg) 50% 0 no-repeat;
+	background           : url(../images/background.jpg) 50% 0 no-repeat;
 	background-size      : cover;
 	background-attachment: fixed;
 	box-shadow           : 0 0 20px #000000 inset; 	
@@ -247,7 +247,7 @@ a:hover {text-decoration: none;}
 }
 @media(min-width:640px){
 	.index_1 img {margin:8%;width:50%;}
-	.index_2 h1,.index_4 h1{font-size:75px;}
+	.index_2 h1,.index_4 h1{font-size:45px;}
 }
 
 
