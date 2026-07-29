@@ -1,12 +1,8 @@
-  {% include head.html %}
-    <body class = "Microsoft_YaHei">
-    <div id = "headingFull">
-    	{% include navigation.html %}
-    </div>
-    {{ content }}
-    </body>
-	<script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/js/jquery.md5.js" | prepend: site.baseurl }}"></script> 
-	<script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
-</html>
+{% include head.html %}
+  <body id="top" class="site-body immersive-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    {% include navigation.html %}
+    <main id="main-content" class="site-main site-main--full">
+      {{ content }}
+    </main>
+    {% include footer.html %}

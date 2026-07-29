@@ -1,12 +1,18 @@
-	<div class = "footer">
-  		<div id = "left">Powered By <a href="http://www.bootcss.com">BootStrap</a> written &amp; edited in ACM Class PPCA by Sidi Lu
-  		</div>
-  		<div id = "right">Copyright &copy; 2024 <a href="http://acm.sjtu.edu.cn">ACM Class</a> and Sidi Lu. All rights reserved.</div>
-	</div>
+<footer class="site-footer">
+  <div class="site-shell site-footer__inner">
+    <p>Copyright © 2024 ACM Class and Sidi Lu.</p>
+    <div>
+      <a href="mailto:sidilu@g.ucla.edu">sidilu@g.ucla.edu</a>
+      <a href="#top">Back to top</a>
+    </div>
+  </div>
+</footer>
 
-	</body>
-	<script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/js/jquery.md5.js" | prepend: site.baseurl }}"></script> 
-	<script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/jquery.md5.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+{% unless page.body_class or page.layout == "research" or page.layout == "news" or page.layout == "articles" or page.layout == "default_post" %}
+<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
+{% endunless %}
+</body>
 </html>

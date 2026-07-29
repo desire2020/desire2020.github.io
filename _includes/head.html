@@ -1,23 +1,15 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129919974-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-129919974-1');
-    </script>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
-	<link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}" type="text/css" />
-	<link rel="stylesheet" href="{{ "/css/docs.min.css" | prepend: site.baseurl }}" type="text/css" />
-	<link rel="stylesheet" href="{{ "/css/patch.css" | prepend: site.baseurl }}" type="text/css" />
-	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f7f5">
+    <title>{% if page.title and page.title != "Sidi Lu" %}{{ page.title | strip_html }} · {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | default: 'Sidi Lu — researcher, poet and singer.' | strip_html | escape }}">
+    <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}" type="text/css">
+    <link rel="stylesheet" href="{{ "/css/docs.min.css" | prepend: site.baseurl }}" type="text/css">
+    <link rel="stylesheet" href="{{ "/css/patch.css" | prepend: site.baseurl }}" type="text/css">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" type="text/css">
+    <link rel="stylesheet" href="{{ "/css/modern.css" | prepend: site.baseurl }}" type="text/css">
+    <script src="{{ "/js/site.js" | prepend: site.baseurl }}" defer></script>
   </head>

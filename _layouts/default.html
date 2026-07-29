@@ -1,7 +1,8 @@
-  {% include head.html %}
-    <body class = "Microsoft_YaHei" style = "padding-top:50px;">
-    <div id = "headingDefault">
-    	{% include navigation.html %}
-    </div>
-    {{ content }}
+{% include head.html %}
+  <body id="top" class="site-body {{ page.body_class | default: 'inner-page' }}">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    {% include navigation.html %}
+    <main id="main-content" class="site-main{% if page.body_class == 'home-page' %} site-main--home{% endif %}">
+      {{ content }}
+    </main>
     {% include footer.html %}

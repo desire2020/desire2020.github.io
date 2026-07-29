@@ -1,11 +1,24 @@
 ---
 layout: default
+title: Submissions
+body_class: collection-page-body
 ---
-
-<div class="container_big">
+<section class="collection-page">
+  <header class="collection-hero site-shell">
+    <p class="section-label">Research <span>/</span> Submissions</p>
+    <h1>Submissions</h1>
+    <nav class="collection-tabs" aria-label="Research collections">
+      <a href="{{ "/research/index.html" | prepend: site.baseurl }}">All</a>
+      <a href="{{ "/research/publications.html" | prepend: site.baseurl }}">Publications</a>
+      <a href="{{ "/research/submissions.html" | prepend: site.baseurl }}" aria-current="page">Submissions</a>
+      <a href="https://scholar.google.com/citations?user=KHMrrfgAAAAJ" target="_blank" rel="noreferrer">Google Scholar ↗</a>
+    </nav>
+  </header>
+  <div class="collection-list site-shell">
     <ul class="timeline">
-    {% for post in site.categories.submissions limit:10%}
-	    {% include post.html %}
-	{% endfor %}  
-	</ul>
-</div>	
+      {% for post in site.categories.submissions limit:10 %}
+        {% include post.html %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>

@@ -1,14 +1,29 @@
 ---
 layout: default
+title: Research
+body_class: collection-page-body
 ---
-
-<div class="container_big">
+<section class="collection-page">
+  <header class="collection-hero site-shell">
+    <p class="section-label">Sidi Lu <span>/</span> Research</p>
+    <h1>Research</h1>
+    <p class="collection-hero__statement">My long-term research interest lies in measure-theoretic questions about language, especially how measures over language shape model intelligence, generalization, and training efficiency in reinforcement learning. My work on non-autoregressive modeling and post-training follows this same line of inquiry.</p>
+    <nav class="collection-tabs" aria-label="Research collections">
+      <a href="{{ "/research/index.html" | prepend: site.baseurl }}" aria-current="page">All</a>
+      <a href="{{ "/research/publications.html" | prepend: site.baseurl }}">Publications</a>
+      <a href="{{ "/research/submissions.html" | prepend: site.baseurl }}">Submissions</a>
+      <a href="https://scholar.google.com/citations?user=KHMrrfgAAAAJ" target="_blank" rel="noreferrer">Google Scholar ↗</a>
+    </nav>
+  </header>
+  {% include tencent-collaborations.html %}
+  <div class="collection-list site-shell">
     <ul class="timeline">
-    {% for post in site.categories.submissions %}
-	    {% include post.html %}
-	{% endfor %}  
-    {% for post in site.categories.publications %}
-	    {% include post.html %}
-	{% endfor %} 
-	</ul>
-</div>	
+      {% for post in site.categories.submissions %}
+        {% include post.html %}
+      {% endfor %}
+      {% for post in site.categories.publications %}
+        {% include post.html %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>

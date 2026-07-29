@@ -1,11 +1,18 @@
 ---
 layout: default
+title: Current Trend
+body_class: collection-page-body
 ---
-
-<div class="container_big">
+<section class="collection-page collection-page--journal">
+  <header class="collection-hero site-shell">
+    <p class="section-label">Sidi Lu <span>/</span> Journal</p>
+    <h1>Current Trend</h1>
+  </header>
+  <div class="collection-list site-shell">
     <ul class="timeline">
-    {% for post in site.categories.trend %}
-	    {% include post.html %}
-	{% endfor %}  
-	</ul>
-</div>	
+      {% for post in site.categories.trend %}
+        {% include post.html %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>

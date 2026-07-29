@@ -1,80 +1,96 @@
 ---
-title:	Index
-
+layout: default
+title: Sidi Lu
+body_class: home-page
 ---
+<section class="profile-intro" aria-labelledby="home-title">
+  <div class="site-shell profile-intro__grid">
+    <div class="profile-intro__copy">
+      <h1 id="home-title">Sidi Lu</h1>
+      <p class="profile-intro__cn">思迪的园子</p>
+      <p class="profile-intro__lede">Husband, researcher, poet and singer. <em>Or just a dumb bunny.</em></p>
+      <p class="profile-intro__role">Currently at <strong>Seed LLM</strong>, working on multimodal post-training.</p>
+      <p class="profile-intro__affiliation">Previously at Tencent AI Lab Seattle, August 2025–March 2026. PhD · Class of 2025 · <a href="https://vnpeng.net/group/">UCLA PlusLab</a>, under the supervision of <a href="https://violetpeng.github.io/">Prof. Nanyun (Violet) Peng</a>.</p>
+      <div class="profile-links" aria-label="Profile links">
+        <a href="mailto:sidilu@g.ucla.edu">Email</a>
+        <a href="https://scholar.google.com/citations?user=KHMrrfgAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>
+        <a href="{{ "/CV/SidiLu.pdf" | prepend: site.baseurl }}">Curriculum vitae</a>
+      </div>
+    </div>
+    <figure class="profile-photo">
+      <img src="{{ "/images/blue_bg.png" | prepend: site.baseurl }}" alt="Portrait of Sidi Lu" width="696" height="981">
+    </figure>
+  </div>
+</section>
 
-<!DOCTYPE html>
-<html>
-  {% include head.html %}
-  <body class = "Microsoft_YaHei">
-  <div id = "headingForIndex">
-  {% include navigation.html %}
-  </div>
-      <div class="index_1 fullh">
-    </div>
-    <div class="index_2">
-      <h1>Sidi Lu's Zone 思迪的园子</h1>
-    </div>
-    <div class="index_3 container_big">
-        <img src = "./images/me.jpg" />
-      <div>
-        <h2> Email: sidilu@cs.ucla.edu </h2>
-        <h2> Husband, researcher, poet and singer.</h2>
-        <h3> Or <u><i>just a dumb bunny</i></u>.</h3>
-        <h4> PhD @ Class 2025 of <a href="https://vnpeng.net/group/">UCLA Pluslab</a> under supervision of <a href="https://violetpeng.github.io/">Prof. Nanyun (Violet) Peng</a> </h4>
-        <p>
-            As a researcher, my research mainly focuses on <b>controllable generation</b>, including both <b>evolutionary</b> approaches for better control over causal, autoregressive language models and <b>revolutionary</b> approaches to build <b>Non-autoregressive</b> language models.
-        </p>
-        <p>
-            As a poet, my work are mainly identified as modern misty poetry that mainly question <i> the very essence of life and death </i>.
-        </p>
-        <p>
-            As an (amateur) singer, I'm generally interested in R&B, thrash metal and pop rock, especially those from 1990s. </i>.
-        </p>
-        <p>
-            I generally identify myself as an <b>agnostic antheist</b> but I have a strong interest in studying the history of religions and cultures, especially those related to Christianity.
-        </p>
-    </div> 
-  </div>
-    <div class="index_4">
-        <div><h1>About me ...</h1>
-      </div> 
-    </div>
-    <div class="container_big">
-    <div class="index_5 row">
-      
-      <div class="col-md-6">
-        <h2>Current Trend</h2>
-            {% for post in site.categories.trend limit:5 %}
-	        	{% include brief_post.html %}
-	        {% endfor %}  
-        <button type="button" class="btn btn_new" onclick="window.open('./trend/index.html')">More</button>
-      </div>
-      <!-- <div class="col-md-5">
-        <h1>Recent Chinese Poems</h1>
-            {% for post in site.categories.poem limit:5 %}
-            {% include brief_post.html %}
-            {% endfor %}  
-        <button type="button" class="btn btn_new" onclick="window.open('./research/index.html')">More</button>
-      </div> -->
-      <div class="col-md-6">
-        <h2>Recent Research Focus</h2>
-            {% for post in site.categories.publications limit:5 %}
-            {% include brief_post.html %}
-            {% endfor %}  
-        <button type="button" class="btn btn_new" onclick="window.open('./research/index.html')">More</button>
+<section class="home-section" id="research">
+  <div class="site-shell home-section__layout">
+    <header class="home-section__header">
+      <h2>Research</h2>
+    </header>
+    <div class="home-section__content">
+      <p class="research-statement">My long-term research interest lies in measure-theoretic questions about language, especially how measures over language shape model intelligence, generalization, and training efficiency in reinforcement learning. My work on non-autoregressive modeling and post-training follows this same line of inquiry.</p>
+      <div class="home-list-block">
+        <div class="home-list-block__header">
+          <h3>Recent research</h3>
+          <a href="{{ "/research/index.html" | prepend: site.baseurl }}">All research</a>
+        </div>
+        <div class="publication-list">
+          {% for post in site.categories.publications limit:5 %}
+            <a class="publication-row" href="{{ post.url | prepend: site.baseurl }}">
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y" }}</time>
+              <span>{{ post.title }}</span>
+            </a>
+          {% endfor %}
+        </div>
       </div>
     </div>
-    <!-- <div class="index_5 row">
-      
-       <div class="col-md-5">
-        <h1>Recent Translations</h1>
-            {% for post in site.categories.translation limit:5 %}
-            {% include brief_post.html %}
-            {% endfor %}  
-        <button type="button" class="btn btn_new" onclick="window.open('./research/index.html')">More</button>
-      </div>
-    </div> -->
-    
   </div>
-{% include footer.html %}
+</section>
+
+<section class="home-section" id="journal">
+  <div class="site-shell home-section__layout">
+    <header class="home-section__header">
+      <h2>Current Trend</h2>
+    </header>
+    <div class="home-section__content">
+      <div class="home-list-block">
+        <div class="home-list-block__header">
+          <h3>Recent entries</h3>
+          <a href="{{ "/trend/index.html" | prepend: site.baseurl }}">Full archive</a>
+        </div>
+        <div class="journal-list">
+          {% for post in site.categories.trend limit:5 %}
+            <a class="journal-row" href="{{ post.url | prepend: site.baseurl }}">
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %Y" }}</time>
+              <span>{{ post.title }}</span>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-section" id="about">
+  <div class="site-shell home-section__layout">
+    <header class="home-section__header">
+      <h2>Outside research</h2>
+    </header>
+    <div class="home-section__content personal-notes">
+      <article>
+        <h3>Poetry</h3>
+        <p>My work is mainly identified as modern misty poetry that questions the very essence of life and death.</p>
+        <a href="{{ "/chsliterature/poem.html" | prepend: site.baseurl }}">Read poems</a>
+      </article>
+      <article>
+        <h3>Music</h3>
+        <p>As an amateur singer, I am generally interested in R&amp;B, thrash metal and pop rock, especially those from the 1990s.</p>
+      </article>
+      <article>
+        <h3>Worldview</h3>
+        <p>I generally identify myself as an agnostic antheist, with a strong interest in the history of religions and cultures, especially those related to Christianity.</p>
+      </article>
+    </div>
+  </div>
+</section>

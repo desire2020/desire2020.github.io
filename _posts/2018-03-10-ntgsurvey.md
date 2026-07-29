@@ -1,16 +1,33 @@
 ---
 layout:   research
-title:    IJCAI-2018&#58; Neural Text Generation&#58; Past, Present and Beyond
+title:    Neural Text Generation&#58; Past, Present and Beyond
 category: publications
+date:     2018-03-10
+summary:  "A systematic survey and empirical comparison of early neural text-generation approaches based on maximum likelihood, reinforcement learning, reparameterization, and adversarial training."
 ---
 
-## Abstract
-We introduce Texygen, a benchmarking platform to support research on open-domain text generation models. Texygen has not only implemented a majority of text generation models, but also covered a set of metrics that evaluate the diversity, the quality and the consistency of the generated texts. The Texygen platform could help standardize the research on text generation and facilitate the sharing of fine-tuned open-source implementations among researchers for their work. As a consequence, this would help in improving the reproductivity and reliability of future research work in text generation. 
+## Authors
 
-## Arxiv Link
-<a href="https://arxiv.org/abs/1803.07133">https://arxiv.org/abs/1803.07133</a>
+**Sidi Lu**, Yaoming Zhu, Weinan Zhang, Jun Wang, and Yong Yu
+
+## Overview
+
+This survey organizes the development of neural text generation from recurrent language models trained with maximum likelihood to approaches based on reinforcement learning, reparameterization, and generative adversarial networks.
+
+It compares how these model families address recurring problems such as exposure bias, unstable gradients, and limited output diversity.
+
+## Results
+
+Alongside the survey, the paper benchmarks representative neural generation models on two datasets. The empirical comparison connects their observed behavior with the optimization and diversity issues discussed in the technical review.
+
+## Paper
+
+[arXiv](https://arxiv.org/abs/1803.07133)
 
 ## Status
 
-Rejected
+Preprint, 2018.
 
+## Citation
+
+Sidi Lu, Yaoming Zhu, Weinan Zhang, Jun Wang, and Yong Yu. “Neural Text Generation: Past, Present and Beyond.” arXiv:1803.07133, 2018.

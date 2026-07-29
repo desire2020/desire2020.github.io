@@ -21,8 +21,6 @@ $(document).ready(function(){
     h = winh*2/3;
     if (winw<768) h = winw*3/5;
     $(".halfh").css({height:h});
-    fontmaking();
-    console.log("Welcome to ACM class~!\nYou can send advice to fei960922@gmail.com;\nDesigned by Jerry Xu;\nWritten by PPCA2014;\nPowered By BootStrap;\nCopyright © 2014 ACM Class. All rights reserved.");
 
 /*  ------------------------------------------
                    Academic 

@@ -1,14 +1,17 @@
-<li>
-	<div class="timeline-date">{{ post.date | date_to_string }}</div>
-	<a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}"><div class="timeline-badge primary"></div></a>
-	<div class="timeline-panel">
-		<div class = "col-md-6 timeline-pic hidden-xs" {% if post.feature %}style = "background-image:url({{site.baseurl}}/images/{{ post.feature }});"{% endif %}>
-		</div>
-		<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-		<div class="col-md-6 timeline-body">
-	  		{{ post.content  | split:'<!--break-->' | first }}
-		</div>
-		<div class="timeline-footer"><a class="pull-left" href="{{ post.url | prepend: site.baseurl }}">Details</a></div>
-	</div>
+<li class="timeline-item">
+  <a class="timeline-card" href="{{ post.url | prepend: site.baseurl }}">
+    <div class="timeline-card__meta">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y · %m" }}</time>
+      <span>{{ post.category }}</span>
+    </div>
+    <div class="timeline-card__copy">
+      <h2>{{ post.title }}</h2>
+      {% if post.summary %}
+        <p>{{ post.summary }}</p>
+      {% else %}
+        <p>{{ post.content | strip_html | strip_newlines | truncatewords: 42 }}</p>
+      {% endif %}
+      <span class="timeline-card__action">Read entry ↗</span>
+    </div>
+  </a>
 </li>
-

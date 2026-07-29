@@ -1,11 +1,24 @@
 ---
 layout: default
+title: 小说
+body_class: collection-page-body
 ---
-
-<div class="container_big">
+<section class="collection-page collection-page--literature">
+  <header class="collection-hero site-shell">
+    <p class="section-label">Chinese Literature <span>/</span> 小说</p>
+    <h1>小说</h1>
+    <nav class="collection-tabs" aria-label="Chinese literature collections">
+      <a href="{{ "/chsliterature/index.html" | prepend: site.baseurl }}">全部</a>
+      <a href="{{ "/chsliterature/poem.html" | prepend: site.baseurl }}">诗歌</a>
+      <a href="{{ "/chsliterature/essay.html" | prepend: site.baseurl }}">杂文</a>
+      <a href="{{ "/chsliterature/novel.html" | prepend: site.baseurl }}" aria-current="page">小说</a>
+    </nav>
+  </header>
+  <div class="collection-list site-shell">
     <ul class="timeline">
-    {% for post in site.categories.novel %}
-	    {% include post.html %}
-	{% endfor %}  
-	</ul>
-</div>	
+      {% for post in site.categories.novel %}
+        {% include post.html %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>

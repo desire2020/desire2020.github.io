@@ -1,20 +1,22 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
-<body>
-
-<img src = "/images/jiong.gif">
-
-<h2>404  Page</h2>
-
-<h3>Obviously, you are visiting a website that doesn't exist.</h3>
-
-<h4>Maybe you need to check the site URL,or return to the <a>index</a> website.</h4>
-
-<strong> Also, though we are not quite sure, we speculate that you come here to view the code below. It's able to be compiled in up to 4 languages. </strong>
-
-<br>
-
-<img src = "/images/polyglot-404.png" />
-
-</body>
-</html>
+---
+layout: default
+title: 404
+body_class: not-found-page
+---
+<section class="not-found">
+  <div class="site-shell">
+    <p class="section-label"><span>404</span> Page not found</p>
+    <div class="not-found__grid">
+      <div>
+        <h1>This page<br>does not exist.</h1>
+        <p>Maybe you need to check the site URL, or return to the index page.</p>
+        <a class="button button--primary" href="{{ "/index.html" | prepend: site.baseurl }}">Return home <span aria-hidden="true">↗</span></a>
+      </div>
+      <img class="not-found__rabbit" src="{{ "/images/jiong.gif" | prepend: site.baseurl }}" alt="Confused animated face" width="100" height="100">
+    </div>
+    <div class="not-found__code">
+      <p>Also, though we are not quite sure, we speculate that you came here to view the code below. It can be compiled in up to four languages.</p>
+      <img src="{{ "/images/polyglot-404.png" | prepend: site.baseurl }}" alt="Polyglot source code" width="500" height="274">
+    </div>
+  </div>
+</section>
