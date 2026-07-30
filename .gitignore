@@ -3,4 +3,13 @@ CV/*.aux
 CV/*.syn*
 CV/*.log
 CV/.idea
+CV/Awesome_CV/*.aux
+CV/Awesome_CV/*.fdb_latexmk
+CV/Awesome_CV/*.fls
+CV/Awesome_CV/*.log
+CV/Awesome_CV/*.out
+CV/Awesome_CV/*.xdv
+CV/Awesome_CV/cv.pdf
+CV/Awesome_CV.zip
+*:Zone.Identifier
 _site
